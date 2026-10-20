@@ -20,21 +20,20 @@ El bloqueo es de arquitectura: el objetivo pide independencia de APIs, pero Puls
 
 ## Proyectos incluidos
 
-| Carpeta | Qué es | Recorrido principal |
+| Código fuente | Qué es | Recorrido principal |
 |---|---|---|
-| [`projects/AgenteAlpha`](projects/AgenteAlpha) | Prototipo Android independiente en Kotlin y Compose. | Conversación local → app visible de modelo → lectura de Accessibility y captura opcional → una acción estructurada → comprobación simple. |
-| [`projects/TunnelTurbo`](projects/TunnelTurbo) | App Android Kotlin/XML, runtime de agente y controlador Python/MCP. | Chat/router → proveedor local o remoto → observación semántica/OCR/Shizuku → plan tipado → ejecutor → verifier y registro de eventos. |
-| [`projects/Pulso`](projects/Pulso) | App Android nativa en Java con servicio de Accessibility y panel flotante. | Meta → controlador → cliente de proveedor → lote de acciones → política de seguridad → observación posterior → resultado. |
-| [`projects/VisorSemantico`](projects/VisorSemantico) | Demo de escritorio GNOME/GTK y AT-SPI. | El usuario elige una captura → la app lee la ventana accesible → superpone roles, nombres y límites → inspección local de nodos. |
+| [Frankendroid-AgenteAlpha-source.zip](Frankendroid-AgenteAlpha-source.zip) | Prototipo Android independiente en Kotlin y Compose. | Conversación local → app visible de modelo → lectura de Accessibility y captura opcional → una acción estructurada → comprobación simple. |
+| [Frankendroid-TunnelTurbo-source.zip](Frankendroid-TunnelTurbo-source.zip) | App Android Kotlin/XML, runtime de agente y controlador Python/MCP. | Chat/router → proveedor local o remoto → observación semántica/OCR/Shizuku → plan tipado → ejecutor → verifier y registro de eventos. |
+| [Frankendroid-Pulso-source.zip](Frankendroid-Pulso-source.zip) | App Android nativa en Java con servicio de Accessibility y panel flotante. | Meta → controlador → cliente de proveedor → lote de acciones → política de seguridad → observación posterior → resultado. |
+| [Frankendroid-VisorSemantico-source.zip](Frankendroid-VisorSemantico-source.zip) | Demo de escritorio GNOME/GTK y AT-SPI. | El usuario elige una captura → la app lee la ventana accesible → superpone roles, nombres y límites → inspección local de nodos. |
 
 El visor permite entender visualmente la relación entre una captura y el árbol de accesibilidad. Es una demostración de inspección semántica en Linux; no es un controlador Android ni un agente autónomo.
 
 ## Cómo leer el archivo
 
-1. Empieza por [`docs/ARQUITECTURA.md`](docs/ARQUITECTURA.md) para seguir el recorrido de cada sistema y ubicar sus componentes.
-2. Lee [`docs/AUDITORIA.md`](docs/AUDITORIA.md) para comparar intención, implementación y evidencia de dispositivo.
-3. Consulta [`STATUS.md`](STATUS.md) para el cierre y el estado observado.
-4. Revisa [`docs/INVESTIGACION.md`](docs/INVESTIGACION.md) para las referencias externas y sus límites probatorios.
+1. Empieza por [ARQUITECTURA.md](ARQUITECTURA.md) para seguir el recorrido de cada sistema y ubicar sus componentes.
+2. Lee [AUDITORIA.md](AUDITORIA.md) para comparar intención, implementación y evidencia de dispositivo.
+3. Consulta [STATUS.md](STATUS.md) para el cierre y el estado observado.
+4. Revisa [INVESTIGACION.md](INVESTIGACION.md) para las referencias externas y sus límites probatorios.
 
-Las fuentes originales permanecen separadas por proyecto para conservar su contexto. Este archivo es una reconstrucción de la trayectoria, no una afirmación de que las cuatro partes formen un sistema integrado.
-
+Las fuentes se conservan en archivos independientes para mantener el contexto de cada proyecto. Este archivo documenta su trayectoria y sus conexiones.
