@@ -1,0 +1,30 @@
+# Android/Gradle output
+.gradle/
+.kotlin/
+build/
+*/build/
+*/**/build/
+local.properties
+*.apk
+*.aab
+*.idsig
+
+# Signing and provider credentials
+*.jks
+*.keystore
+.env
+.env.*
+secrets.properties
+
+# Python and local machine state
+__pycache__/
+.venv/
+venv/
+.DS_Store
+*.log
+
+# Local experiment output
+captures/
+device-dumps/
+runtime-cache/
+
